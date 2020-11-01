@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div class='wrapper'>
+
+    <div class='title-bar'>
+      <h2>Book store</h2>
+      <div class='counter-box'>
+        <h3 class='toRead-count'>To Read:</h3><span>0</span>
+        <h3 class='finished-count'>Finished:</h3><span>0</span>
+      </div>
+    </div>
+
+    <form action="" class="book-form" id='form'>
+      <input type="text" class="input add-input" id="title" placeholder="title">
+      <input type="text" class="input add-input" id='type' placeholder="author">
+      <input class='btn add-btn' type="submit" id='btn' value="Add">
+    </form>
+    
+    <div id='list-container'>
+      <div class='booklist-container toRead'>
+        <div class='list-header'> 
+          <h2>To read</h2>
+          <p>Finshed</p>
+          <p>Remove</p>
+        </div>
+        <ul id='book-list'>
+          <!-- To Read Book List -->
+        </ul>
+      </div>
+
+      <div class="booklist-container redBooks">
+        <div class='list-header'> 
+          <h2>Finished</h2>
+          <p>&nbsp;</p>
+          <p>Remove</p>
+        </div>
+        <!-- Achive book list  -->
+        <div id='cach-container'><ul id='cach-list'>
+           </ul></div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <script src='app.js' type="module"></script>
+</body>
+</html>
+
